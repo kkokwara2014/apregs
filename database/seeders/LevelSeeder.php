@@ -18,5 +18,9 @@ class LevelSeeder extends Seeder
             'name' => 'National Diploma (ND)',
             'slug' => Str::slug('National Diploma (ND)'),
         ]);
+        Level::create([
+            'name' => 'Higher National Diploma (HND)',
+            'slug' => Str::slug('Higher National Diploma (HND)'),
+        ]);
     }
 }

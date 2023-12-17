@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>OnePage Bootstrap Template - Index</title>
+    <title>APREGS</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -30,13 +30,7 @@
     <!-- Template Main CSS File -->
     <link href="{{ asset('bootstrap_assets/assets/css/style.css') }}" rel="stylesheet">
 
-    <!-- =======================================================
-  * Template Name: OnePage
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body>
@@ -1059,7 +1053,9 @@
 
                     <div class="col-lg-8 mt-2 mt-lg-0">
 
-                        <form action="#" method="post" role="form" class="php-email-form">
+                        <form action="{{ route('login') }}" method="post" role="form" class="php-email-form">
+                            {{-- <form action="{{ route('login') }}" method="post" role="form" class="php-email-form"> --}}
+                            @csrf
                             <div class="row gy-2 gx-md-3">
                                 {{-- <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name"
@@ -1181,7 +1177,7 @@
     <script src="{{ asset('bootstrap_assets/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
     <script src="{{ asset('bootstrap_assets/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ asset('bootstrap_assets/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ asset('bootstrap_assets/assets/vendor/php-email-form/validate.js') }}"></script>
+    {{-- <script src="{{ asset('bootstrap_assets/assets/vendor/php-email-form/validate.js') }}"></script> --}}
 
     <!-- Template Main JS File -->
     <script src="{{ asset('bootstrap_assets/assets/js/main.js') }}"></script>
